@@ -30,7 +30,7 @@ public class Knife4jAdminConfig {
                 .groupName("Admin 后台接口")
                 .select()
                 // 这里指定 Controller 扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.quanxiaoha.weblog.admin.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.jacob.weblog.admin.controller"))
                 .paths(PathSelectors.any())
                 .build();
         return docket;

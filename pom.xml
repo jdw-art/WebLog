@@ -64,6 +64,12 @@
                 <version>${revision}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.jacob.weblog</groupId>
+                <artifactId>weblog-jwt</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
             <!-- 常用工具库 -->
             <dependency>
                 <groupId>com.google.guava</groupId>

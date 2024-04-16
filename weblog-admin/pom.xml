@@ -35,6 +35,11 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.jacob.weblog</groupId>
+            <artifactId>weblog-jwt</artifactId>
+        </dependency>
+
         <!-- knife4j -->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>

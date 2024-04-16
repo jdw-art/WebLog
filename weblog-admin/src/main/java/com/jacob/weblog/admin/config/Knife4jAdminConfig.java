@@ -48,4 +48,5 @@ public class Knife4jAdminConfig {
                 .version("1.0") // 版本号
                 .build();
     }
+
 }

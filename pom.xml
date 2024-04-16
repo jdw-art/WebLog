@@ -25,6 +25,7 @@
         <module>weblog-web</module>
         <module>weblog-admin</module>
         <module>weblog-common</module>
+        <module>weblog-jwt</module>
     </modules>
 
 

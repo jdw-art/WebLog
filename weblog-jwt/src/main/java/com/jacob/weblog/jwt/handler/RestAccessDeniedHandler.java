@@ -24,4 +24,5 @@ public class RestAccessDeniedHandler implements AccessDeniedHandler {
         log.warn("登录成功访问收保护的资源，但是权限不够: ", accessDeniedException);
         // 预留，后面引入多角色时会用到
     }
+
 }

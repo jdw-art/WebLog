@@ -54,7 +54,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
             List<String> roles = roleDOS.stream().map(p -> p.getRole()).collect(Collectors.toList());
             roleArr = roles.toArray(new String[roles.size()]);
         }
-
         // authorities 用于指定角色
         return User.withUsername(userDO.getUsername())
                 .password(userDO.getPassword())

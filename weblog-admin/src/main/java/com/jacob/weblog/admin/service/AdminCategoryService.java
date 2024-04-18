@@ -1,6 +1,8 @@
 package com.jacob.weblog.admin.service;
 
+import com.jacob.weblog.admin.model.vo.FindCategoryPageListReqVO;
 import com.jacob.weblog.admin.model.vo.category.AddCategoryReqVO;
+import com.jacob.weblog.common.utils.PageResponse;
 import com.jacob.weblog.common.utils.Response;
 
 /**
@@ -16,4 +18,11 @@ public interface AdminCategoryService {
      * @return
      */
     Response addCategory(AddCategoryReqVO addCategoryReqVO);
+
+    /**
+     * 分类分页数据查询
+     * @param findCategoryPageListReqVO
+     * @return
+     */
+    PageResponse findCategoryList(FindCategoryPageListReqVO findCategoryPageListReqVO);
 }

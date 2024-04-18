@@ -24,4 +24,5 @@ public class AddTagReqVO {
 
     @NotEmpty(message = "标签集合不能为空")
     private List<String> tags;
+
 }

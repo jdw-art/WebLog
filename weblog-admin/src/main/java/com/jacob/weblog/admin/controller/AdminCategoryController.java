@@ -1,8 +1,10 @@
 package com.jacob.weblog.admin.controller;
 
+import com.jacob.weblog.admin.model.vo.FindCategoryPageListReqVO;
 import com.jacob.weblog.admin.model.vo.category.AddCategoryReqVO;
 import com.jacob.weblog.admin.service.AdminCategoryService;
 import com.jacob.weblog.common.aspect.ApiOperationLog;
+import com.jacob.weblog.common.utils.PageResponse;
 import com.jacob.weblog.common.utils.Response;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -31,5 +33,12 @@ public class AdminCategoryController {
     @ApiOperationLog(description = "添加分类")
     public Response addCategory(@RequestBody @Validated AddCategoryReqVO addCategoryReqVO) {
         return categoryService.addCategory(addCategoryReqVO);
+    }
+
+    @PostMapping("/category/list")
+    @ApiOperation(value = "分类分页数据获取")
+    @ApiOperationLog(description = "分类分页数据获取")
+    public PageResponse findCategoryList(@RequestBody @Validated FindCategoryPageListReqVO findCategoryPageListReqVO) {
+        return categoryService.findCategoryList(findCategoryPageListReqVO);
     }
 }

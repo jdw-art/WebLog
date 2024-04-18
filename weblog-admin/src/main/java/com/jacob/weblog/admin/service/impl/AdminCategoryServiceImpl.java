@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jacob.weblog.admin.model.vo.FindCategoryPageListReqVO;
 import com.jacob.weblog.admin.model.vo.FindCategoryPageListRspVO;
 import com.jacob.weblog.admin.model.vo.category.AddCategoryReqVO;
+import com.jacob.weblog.admin.model.vo.category.DeleteCategoryReqVO;
 import com.jacob.weblog.admin.service.AdminCategoryService;
 import com.jacob.weblog.common.domain.dos.CategoryDO;
 import com.jacob.weblog.common.domain.mapper.CategoryMapper;
@@ -104,5 +105,16 @@ public class AdminCategoryServiceImpl implements AdminCategoryService {
         }
 
         return PageResponse.success(categoryDOPage, vos);
+    }
+
+    @Override
+    public Response deleteCategory(DeleteCategoryReqVO deleteCategoryReqVO) {
+        // 分类 ID
+        Long categoryId = deleteCategoryReqVO.getId();
+
+        // 删除分类
+        categoryMapper.deleteById(categoryId);
+
+        return Response.success();
     }
 }

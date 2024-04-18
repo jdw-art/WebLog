@@ -2,6 +2,7 @@ package com.jacob.weblog.admin.service;
 
 import com.jacob.weblog.admin.model.vo.FindCategoryPageListReqVO;
 import com.jacob.weblog.admin.model.vo.category.AddCategoryReqVO;
+import com.jacob.weblog.admin.model.vo.category.DeleteCategoryReqVO;
 import com.jacob.weblog.common.utils.PageResponse;
 import com.jacob.weblog.common.utils.Response;
 
@@ -25,4 +26,13 @@ public interface AdminCategoryService {
      * @return
      */
     PageResponse findCategoryList(FindCategoryPageListReqVO findCategoryPageListReqVO);
+
+    // 省略...
+
+    /**
+     * 删除分类
+     * @param deleteCategoryReqVO
+     * @return
+     */
+    Response deleteCategory(DeleteCategoryReqVO deleteCategoryReqVO);
 }

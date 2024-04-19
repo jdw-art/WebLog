@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: Jacob
- * @Description: 博客设置管理
+ * @Description: 博客设置管理Controller
  * @Date: 2024/4/18 22:22
  * @Version: 1.0
  */
@@ -32,5 +32,12 @@ public class AdminBlogSettingsController {
     @ApiOperationLog(description = "博客基础信息修改")
     public Response updateBlogSettings(@RequestBody @Validated UpdateBlogSettingsReqVO updateBlogSettingsReqVO) {
         return blogSettingsService.updateBlogSettings(updateBlogSettingsReqVO);
+    }
+
+    @PostMapping("/detail")
+    @ApiOperation(value = "获取博客设置详情")
+    @ApiOperationLog(description = "获取博客设置详情")
+    public Response findDetail() {
+        return blogSettingsService.findDetail();
     }
 }

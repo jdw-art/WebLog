@@ -13,6 +13,7 @@ import com.jacob.weblog.common.utils.Response;
  * @Version: 1.0
  */
 public interface AdminArticleService {
+
     /**
      * 发布文章
      * @param publishArticleReqVO

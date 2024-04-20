@@ -34,6 +34,7 @@ import java.util.stream.Collectors;
 @Service
 @Slf4j
 public class AdminArticleServiceImpl implements AdminArticleService {
+
     @Autowired
     private ArticleMapper articleMapper;
     @Autowired

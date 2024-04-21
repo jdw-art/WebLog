@@ -1,6 +1,7 @@
 package com.jacob.weblog.web.service;
 
 import com.jacob.weblog.common.utils.Response;
+import com.jacob.weblog.web.model.vo.tag.FindTagArticlePageListReqVO;
 
 /**
  * @Author: Jacob
@@ -15,4 +16,11 @@ public interface TagService {
      * @return
      */
     Response findTagList();
+
+    /**
+     * 获取标签下文章分页列表
+     * @param findTagArticlePageListReqVO
+     * @return
+     */
+    Response findTagPageList(FindTagArticlePageListReqVO findTagArticlePageListReqVO);
 }

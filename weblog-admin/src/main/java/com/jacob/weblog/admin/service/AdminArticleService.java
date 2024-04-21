@@ -1,9 +1,6 @@
 package com.jacob.weblog.admin.service;
 
-import com.jacob.weblog.admin.model.vo.article.DeleteArticleReqVO;
-import com.jacob.weblog.admin.model.vo.article.FindArticleDetailReqVO;
-import com.jacob.weblog.admin.model.vo.article.FindArticlePageListReqVO;
-import com.jacob.weblog.admin.model.vo.article.PublishArticleReqVO;
+import com.jacob.weblog.admin.model.vo.article.*;
 import com.jacob.weblog.common.utils.Response;
 
 /**
@@ -41,4 +38,11 @@ public interface AdminArticleService {
      * @return
      */
     Response findArticleDetail(FindArticleDetailReqVO findArticleDetailReqVO);
+
+    /**
+     * 更新文章
+     * @param updateArticleReqVO
+     * @return
+     */
+    Response updateArticle(UpdateArticleReqVO updateArticleReqVO);
 }

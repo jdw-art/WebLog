@@ -1,6 +1,7 @@
 package com.jacob.weblog.web.service;
 
 import com.jacob.weblog.common.utils.Response;
+import com.jacob.weblog.web.model.vo.category.FindCategoryArticlePageListReqVO;
 
 /**
  * @Author: Jacob
@@ -14,4 +15,11 @@ public interface CategoryService {
      * @return
      */
     Response findCategoryList();
+
+    /**
+     * 获取分类下文章分页数据
+     * @param findCategoryArticlePageListReqVO
+     * @return
+     */
+    Response findCategoryArticlePageList(FindCategoryArticlePageListReqVO findCategoryArticlePageListReqVO);
 }

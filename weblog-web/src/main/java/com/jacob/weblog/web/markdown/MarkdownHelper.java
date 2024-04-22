@@ -21,7 +21,6 @@ import java.util.List;
  * @Version: 1.0
  */
 public class MarkdownHelper {
-
     /**
      * Markdown 解析器
      */

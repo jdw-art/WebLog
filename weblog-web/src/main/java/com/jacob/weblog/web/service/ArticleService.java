@@ -1,6 +1,7 @@
 package com.jacob.weblog.web.service;
 
 import com.jacob.weblog.common.utils.Response;
+import com.jacob.weblog.web.model.vo.article.FindArticleDetailReqVO;
 import com.jacob.weblog.web.model.vo.article.FindIndexArticlePageListReqVO;
 
 /**
@@ -16,4 +17,11 @@ public interface ArticleService {
      * @return
      */
     Response findArticlePageList(FindIndexArticlePageListReqVO findIndexArticlePageListReqVO);
+
+    /**
+     * 获取文章详情
+     * @param findArticleDetailReqVO
+     * @return
+     */
+    Response findArticleDetail(FindArticleDetailReqVO findArticleDetailReqVO);
 }

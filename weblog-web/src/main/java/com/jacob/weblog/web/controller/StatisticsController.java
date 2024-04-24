@@ -30,4 +30,5 @@ public class StatisticsController {
     public Response findInfo() {
         return statisticsService.findInfo();
     }
+
 }

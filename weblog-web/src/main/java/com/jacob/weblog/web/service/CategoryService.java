@@ -2,6 +2,7 @@ package com.jacob.weblog.web.service;
 
 import com.jacob.weblog.common.utils.Response;
 import com.jacob.weblog.web.model.vo.category.FindCategoryArticlePageListReqVO;
+import com.jacob.weblog.web.model.vo.category.FindCategoryListReqVO;
 
 /**
  * @Author: Jacob
@@ -14,7 +15,7 @@ public interface CategoryService {
      * 获取分类列表
      * @return
      */
-    Response findCategoryList();
+    Response findCategoryList(FindCategoryListReqVO findCategoryListReqVO);
 
     /**
      * 获取分类下文章分页数据

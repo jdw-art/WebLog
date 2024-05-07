@@ -36,4 +36,8 @@ public class FindArticlePageListReqVO extends BasePageQuery {
      * 发布的结束日期
      */
     private LocalDate endDate;
+    /**
+     * 文章类型
+     */
+    private Integer type;
 }

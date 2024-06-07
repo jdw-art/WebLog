@@ -18,8 +18,14 @@ spring:
       connection-timeout: 30000 # 连接的超时时间
       connection-test-query: SELECT 1 # 用于测试连接是否可用的SQL查询
 
+#=================================================================
+# log 日志
+#=================================================================
+logging:
+  config: classpath:logback-weblog.xml
+
 minio:
-  endpoint: http://110.41.141.141:9090 #MinIO服务所在地址
+  endpoint: http://110.41.141.141:9000 #MinIO服务所在地址
   bucketName: weblog #存储桶名称
   accessKey: minioadmin #访问的key
   secretKey: minioadmin #访问的秘钥

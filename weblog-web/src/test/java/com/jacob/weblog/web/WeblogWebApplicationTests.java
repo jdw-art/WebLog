@@ -34,4 +34,11 @@ class WeblogWebApplicationTests {
         userMapper.insert(userDO);
     }
 
+
+    @Test
+    public void testMapper() {
+        assert userMapper != null;
+        System.out.println("UserMapper bean found successfully!");
+    }
+
 }

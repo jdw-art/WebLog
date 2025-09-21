@@ -6,6 +6,7 @@ import com.jacob.weblog.admin.service.AdminUserService;
 import com.jacob.weblog.common.domain.mapper.UserMapper;
 import com.jacob.weblog.common.enums.ResponseCodeEnum;
 import com.jacob.weblog.common.utils.Response;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

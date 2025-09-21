@@ -3,6 +3,7 @@ package com.jacob.weblog.common.domain.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jacob.weblog.common.domain.dos.ArticleContentDO;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @Author: Jacob
@@ -10,6 +11,7 @@ import com.jacob.weblog.common.domain.dos.ArticleContentDO;
  * @Date: 2024/4/20 20:52
  * @Version: 1.0
  */
+//@Mapper
 public interface ArticleContentMapper extends BaseMapper<ArticleContentDO> {
     /**
      * 根据文章 ID 删除记录

@@ -4,6 +4,7 @@ import com.jacob.weblog.common.domain.dos.UserDO;
 import com.jacob.weblog.common.domain.dos.UserRoleDO;
 import com.jacob.weblog.common.domain.mapper.UserMapper;
 import com.jacob.weblog.common.domain.mapper.UserRoleMapper;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -31,6 +32,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
     @Autowired
     private UserMapper userMapper;
+
     @Autowired
     private UserRoleMapper userRoleMapper;
 

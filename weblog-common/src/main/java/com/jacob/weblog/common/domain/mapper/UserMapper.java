@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jacob.weblog.common.domain.dos.UserDO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.time.LocalDateTime;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
  * @Date: 2024/4/16 19:12
  * @Version: 1.0
  */
+//@Mapper
 public interface UserMapper extends BaseMapper<UserDO> {
 
     default UserDO findByUsername(String username) {

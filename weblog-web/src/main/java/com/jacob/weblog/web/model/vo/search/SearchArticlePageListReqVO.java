@@ -2,12 +2,12 @@ package com.jacob.weblog.web.model.vo.search;
 
 import com.jacob.weblog.common.model.BasePageQuery;
 import io.swagger.annotations.ApiModel;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
 
 /**
  * @Author: Jacob

@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jacob.weblog.common.config.InsertBatchMapper;
 import com.jacob.weblog.common.domain.dos.WikiCatalogDO;
 import com.jacob.weblog.common.enums.WikiCatalogLevelEnum;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * @Date: 2024/5/6 18:31
  * @Version: 1.0
  */
+//@Mapper
 public interface WikiCatalogMapper extends InsertBatchMapper<WikiCatalogDO> {
 
     /**

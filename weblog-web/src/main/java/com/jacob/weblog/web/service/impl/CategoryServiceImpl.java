@@ -18,6 +18,7 @@ import com.jacob.weblog.web.model.vo.category.FindCategoryArticlePageListRspVO;
 import com.jacob.weblog.web.model.vo.category.FindCategoryListReqVO;
 import com.jacob.weblog.web.model.vo.category.FindCategoryListRspVO;
 import com.jacob.weblog.web.service.CategoryService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,7 +39,7 @@ import java.util.stream.Collectors;
 public class CategoryServiceImpl implements CategoryService {
     @Autowired
     private CategoryMapper categoryMapper;
-    @Autowired
+    @Resource
     private ArticleCategoryRelMapper articleCategoryRelMapper;
     @Autowired
     private ArticleMapper articleMapper;

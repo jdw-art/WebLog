@@ -22,18 +22,18 @@ import java.util.Base64;
  * @Version: 1.0
  */
 @Component
-public class JwtTokenHelper implements InitializingBean{
+public class JwtTokenHelper implements InitializingBean {
 
     /**
      * 签发人
      */
-    @Value("${jwt.issuer}")
+    @Value("${jwt.issuer:jacob}")
     private String issuer;
 
     /**
      * Token 失效时间（分钟）
      */
-    @Value("${jwt.tokenExpireTime}")
+    @Value("${jwt.tokenExpireTime:1440}")
     private Long tokenExpireTime;
     /**
      * 秘钥
@@ -47,9 +47,10 @@ public class JwtTokenHelper implements InitializingBean{
 
     /**
      * 解码配置文件中配置的 Base 64 编码 key 为秘钥
+     *
      * @param base64Key
      */
-    @Value("${jwt.secret}")
+    @Value("${jwt.secret:NERkDDe5fAUotbAORlGao8YD5EnLbNg1C6njbTGHHrfEk6HzPl6l8+eKKOgeUwH4FUB1x/OrAY1Pa+4S82s5Zg==}")
     public void setBase64Key(String base64Key) {
         key = Keys.hmacShaKeyFor(Base64.getDecoder().decode(base64Key));
     }
@@ -57,6 +58,7 @@ public class JwtTokenHelper implements InitializingBean{
 
     /**
      * 初始化 JwtParser
+     *
      * @throws Exception
      */
     @Override
@@ -69,6 +71,7 @@ public class JwtTokenHelper implements InitializingBean{
 
     /**
      * 生成 Token
+     *
      * @param username
      * @return
      */
@@ -87,6 +90,7 @@ public class JwtTokenHelper implements InitializingBean{
 
     /**
      * 解析 Token
+     *
      * @param token
      * @return
      */
@@ -102,6 +106,7 @@ public class JwtTokenHelper implements InitializingBean{
 
     /**
      * 校验 Token 是否可用
+     *
      * @param token
      * @return
      */
@@ -111,6 +116,7 @@ public class JwtTokenHelper implements InitializingBean{
 
     /**
      * 解析 Token 获取用户名
+     *
      * @param token
      * @return
      */
@@ -127,6 +133,7 @@ public class JwtTokenHelper implements InitializingBean{
 
     /**
      * 生成一个 Base64 的安全秘钥
+     *
      * @return
      */
     private static String generateBase64Key() {

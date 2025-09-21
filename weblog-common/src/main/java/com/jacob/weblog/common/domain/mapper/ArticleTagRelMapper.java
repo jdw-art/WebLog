@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jacob.weblog.common.config.InsertBatchMapper;
 import com.jacob.weblog.common.domain.dos.ArticleTagRelDO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @Date: 2024/4/20 20:54
  * @Version: 1.0
  */
+//@Mapper
 public interface ArticleTagRelMapper extends InsertBatchMapper<ArticleTagRelDO> {
     /**
      * 根据文章 ID 删除关联记录

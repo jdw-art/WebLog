@@ -1,12 +1,11 @@
 package com.jacob.weblog.web.model.vo.category;
 
 import com.jacob.weblog.common.model.BasePageQuery;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * @Author: Jacob

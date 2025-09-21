@@ -4,7 +4,6 @@ import com.jacob.weblog.common.aspect.ApiOperationLog;
 import com.jacob.weblog.common.utils.Response;
 import com.jacob.weblog.web.service.BlogSettingsService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +24,6 @@ public class BlogSettingsController {
     private BlogSettingsService blogSettingsService;
 
     @PostMapping("/detail")
-    @ApiOperation(value = "前台获取博客详情")
     @ApiOperationLog(description = "前台获取博客详情")
     public Response findDetail() {
         return blogSettingsService.findDetail();

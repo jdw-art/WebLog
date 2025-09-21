@@ -14,6 +14,7 @@ import com.jacob.weblog.common.enums.ResponseCodeEnum;
 import com.jacob.weblog.common.exception.BizException;
 import com.jacob.weblog.common.utils.PageResponse;
 import com.jacob.weblog.common.utils.Response;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
@@ -43,7 +44,7 @@ public class AdminArticleServiceImpl implements AdminArticleService {
     private ArticleMapper articleMapper;
     @Autowired
     private ArticleContentMapper articleContentMapper;
-    @Autowired
+    @Resource
     private ArticleCategoryRelMapper articleCategoryRelMapper;
     @Autowired
     private CategoryMapper categoryMapper;

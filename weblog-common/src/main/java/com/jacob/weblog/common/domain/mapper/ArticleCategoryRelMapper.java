@@ -3,6 +3,7 @@ package com.jacob.weblog.common.domain.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jacob.weblog.common.domain.dos.ArticleCategoryRelDO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * @Date: 2024/4/20 20:53
  * @Version: 1.0
  */
+//@Mapper
 public interface ArticleCategoryRelMapper extends BaseMapper<ArticleCategoryRelDO> {
     /**
      * 根据文章 ID 删除关联记录

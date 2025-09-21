@@ -2,9 +2,9 @@ package com.jacob.weblog.jwt.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jacob.weblog.common.utils.Response;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 

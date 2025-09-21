@@ -11,6 +11,7 @@ import com.jacob.weblog.common.domain.mapper.ArticleCategoryRelMapper;
 import com.jacob.weblog.common.domain.mapper.ArticleTagRelMapper;
 import com.jacob.weblog.common.domain.mapper.CategoryMapper;
 import com.jacob.weblog.common.domain.mapper.TagMapper;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,7 @@ import java.util.stream.Collectors;
 public class AdminStatisticsServiceImpl implements AdminStatisticsService {
     @Autowired
     private CategoryMapper categoryMapper;
-    @Autowired
+    @Resource
     private ArticleCategoryRelMapper articleCategoryRelMapper;
     @Autowired
     private TagMapper tagMapper;

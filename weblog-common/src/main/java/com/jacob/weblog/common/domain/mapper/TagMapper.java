@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jacob.weblog.common.domain.dos.TagDO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.Objects;
  * @Date: 2024/4/18 20:00
  * @Version: 1.0
  */
+//@Mapper
 public interface TagMapper extends BaseMapper<TagDO> {
 
     /**

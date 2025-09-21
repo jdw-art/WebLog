@@ -16,6 +16,7 @@ import com.jacob.weblog.common.exception.BizException;
 import com.jacob.weblog.common.model.vo.SelectRspVO;
 import com.jacob.weblog.common.utils.PageResponse;
 import com.jacob.weblog.common.utils.Response;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class AdminCategoryServiceImpl implements AdminCategoryService {
     @Autowired
     private CategoryMapper categoryMapper;
 
-    @Autowired
+    @Resource
     private ArticleCategoryRelMapper articleCategoryRelMapper;
 
     /**

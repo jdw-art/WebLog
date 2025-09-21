@@ -17,6 +17,7 @@ import com.jacob.weblog.web.model.vo.category.FindCategoryListRspVO;
 import com.jacob.weblog.web.model.vo.tag.FindTagListRspVO;
 import com.jacob.weblog.web.service.ArticleService;
 import com.jacob.weblog.web.utils.MarkdownStatsUtil;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
@@ -44,7 +45,7 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleContentMapper articleContentMapper;
     @Autowired
     private CategoryMapper categoryMapper;
-    @Autowired
+    @Resource
     private ArticleCategoryRelMapper articleCategoryRelMapper;
     @Autowired
     private TagMapper tagMapper;

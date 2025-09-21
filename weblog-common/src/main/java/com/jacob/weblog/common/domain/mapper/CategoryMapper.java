@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jacob.weblog.common.domain.dos.CategoryDO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @Date: 2024/4/18 16:15
  * @Version: 1.0
  */
+//@Mapper
 public interface CategoryMapper extends BaseMapper<CategoryDO> {
     /**
      * 根据用户名查询

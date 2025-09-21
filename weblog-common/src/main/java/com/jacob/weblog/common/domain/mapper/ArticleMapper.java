@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jacob.weblog.common.domain.dos.ArticleDO;
 import com.jacob.weblog.common.domain.dos.ArticlePublishCountDO;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
@@ -19,6 +20,7 @@ import java.util.Objects;
  * @Date: 2024/4/20 20:50
  * @Version: 1.0
  */
+//@Mapper
 public interface ArticleMapper extends BaseMapper<ArticleDO> {
 
     /**

@@ -1,0 +1,23 @@
+# .github/workflows/sync-to-gitlab.yml
+name: Sync to GitLab
+
+on:
+  push:
+    branches: [ main ] # 指定要同步的分支
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取所有历史记录
+
+      - name: Push to GitLab
+        run: |
+          git remote add gitlab https://oauth2:${GITLAB_TOKEN}@gitlab.com/jdw-art/WebLog.git
+          git push gitlab main:main --force
+          # 如果需要同步多个分支，可以在这里添加更多 git push 命令
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
